@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Modal Window</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-section">
+        <button class="main-section__btn-modal-window" id="btn-modal-window">
+          Стать парнёром
+        </button>
+      </div>
+      <div class="modal-section" id="modal">
+        <div class="modal-section__content">
+          <div class="modal-section__header">
+            <h2 class="modal-section__title">Стать партнёром проекта</h2>
+          </div>
+          <div class="modal-section__body">
+            <form action="#" class="modal-section__form" id="form">
+              <div class="modal-section__form-block">
+                <div class="modal-section__form-left-part">
+                  <div class="modal-section__form-group">
+                    <label for="partner-name" class="modal-section__label"
+                      ><span class="modal-section__star">✱</span> Название
+                      организации</label
+                    >
+                    <input
+                      type="text"
+                      id="partner-name"
+                      class="modal-section__input"
+                      placeholder="..."
+                      required
+                    />
+                  </div>
+                  <div class="modal-section__form-group">
+                    <label for="phone" class="modal-section__label"
+                      ><span class="modal-section__star">✱</span> Телефон</label
+                    >
+                    <input
+                      type="tel"
+                      id="phone"
+                      class="modal-section__input"
+                      placeholder="..."
+                      pattern="^\+7 \d{3} \d{3}-\d{2}-\d{2}$"
+                      required
+                    />
+                  </div>
+                  <div class="modal-section__form-group">
+                    <label for="email" class="modal-section__label"
+                      ><span class="modal-section__star">✱</span> E-mail</label
+                    >
+                    <input
+                      type="email"
+                      id="email"
+                      class="modal-section__input"
+                      placeholder="..."
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="modal-section__form-right-part">
+                  <label
+                    for="logo"
+                    class="modal-section__label modal-section__label_logo"
+                  >
+                    <span class="modal-section__star">✱</span> Логотип (jpeg,
+                    png)
+                  </label>
+                  <div class="modal-section__upload-wrapper">
+                    <div class="modal-section__upload-container">
+                      <input
+                        type="file"
+                        class="modal-section__upload-input"
+                        id="fileInput"
+                        accept="image/jpeg, image/png"
+                        required
+                      />
+                      <div
+                        class="modal-section__image-preview"
+                        id="imagePreview"
+                      >
+                        <img
+                          src="img/image-preview.png"
+                          alt="Image Preview"
+                          id="image"
+                          class="modal-section__image-preview-img"
+                        />
+                        <div class="modal-section__overlay">
+                          <img
+                            src="icon/select-icon.svg"
+                            alt="Select file"
+                            class="modal-section__select-file-icon"
+                          />
+                          <span class="modal-section__select-file"
+                            >Выберите<br />файл</span
+                          >
+                        </div>
+                      </div>
+                      <button class="modal-section__delete-btn" id="deleteBtn">
+                        <img
+                          src="icon/close-icon.svg"
+                          alt="Close file"
+                          class="modal-section__close-file-icon"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="modal-section__form-group modal-section__form-group_large"
+              >
+                <div class="modal-section__form-group-wrapper">
+                  <label
+                    for="direction"
+                    class="modal-section__label modal-section__label_for-select"
+                  >
+                    <span class="modal-section__star">✱</span>
+                    Направление</label
+                  >
+                  <select
+                    id="select-direction"
+                    class="modal-section__select"
+                    required
+                  >
+                    <option value="" disabled selected hidden>
+                      Направление...
+                    </option>
+                    <option value="ecology">Экология</option>
+                    <option value="health">Здоровье</option>
+                    <option value="technology">Технологии</option>
+                  </select>
+                  <span class="input-icon">
+                    <img src="icon/arrow-icon.svg" alt="icon" />
+                  </span>
+                </div>
+              </div>
+              <div
+                class="modal-section__form-group modal-section__form-group_large"
+              >
+                <div class="modal-section__form-group-wrapper">
+                  <input
+                    type="text"
+                    class="modal-section__input modal-section__input-large"
+                    placeholder="..."
+                  />
+                  <span class="input-icon">
+                    <img src="icon/site-icon.svg" alt="icon" />
+                  </span>
+                </div>
+              </div>
+              <div
+                class="modal-section__form-group modal-section__form-group_large"
+              >
+                <div class="modal-section__form-group-wrapper">
+                  <input
+                    type="text"
+                    class="modal-section__input modal-section__input-large"
+                    placeholder="..."
+                  />
+                  <span class="input-icon">
+                    <img src="icon/vk-icon.svg" alt="icon" />
+                  </span>
+                </div>
+              </div>
+              <div
+                class="modal-section__form-group modal-section__form-group_large"
+              >
+                <div class="modal-section__form-group-wrapper">
+                  <input
+                    type="text"
+                    class="modal-section__input modal-section__input-large"
+                    placeholder="..."
+                  />
+                  <span class="input-icon">
+                    <img src="icon/ok-icon.svg" alt="icon" />
+                  </span>
+                </div>
+              </div>
+              <div
+                class="modal-section__form-group modal-section__form-group_large"
+              >
+                <div class="modal-section__form-group-wrapper">
+                  <input
+                    type="text"
+                    class="modal-section__input modal-section__input-large"
+                    placeholder="..."
+                  />
+                  <span class="input-icon">
+                    <img src="icon/fb-icon.svg" alt="icon" />
+                  </span>
+                </div>
+              </div>
+              <div
+                class="modal-section__form-group modal-section__form-group_large"
+              >
+                <div class="modal-section__form-group-wrapper">
+                  <input
+                    type="text"
+                    class="modal-section__input modal-section__input-large"
+                    placeholder="..."
+                  />
+                  <span class="input-icon">
+                    <img src="icon/inst-icon.svg" alt="icon" />
+                  </span>
+                </div>
+              </div>
+              <div
+                class="modal-section__form-group modal-section__form-group_large"
+              >
+                <div class="modal-section__form-group-wrapper">
+                  <input
+                    type="text"
+                    class="modal-section__input modal-section__input-large"
+                    placeholder="..."
+                  />
+                  <span class="input-icon">
+                    <img src="icon/yt-icon.svg" alt="icon" />
+                  </span>
+                </div>
+              </div>
+              <div
+                class="modal-section__form-group modal-section__form-group_large"
+              >
+                <label for="supervisor" class="modal-section__label"
+                  >Руководитель</label
+                >
+                <input
+                  type="text"
+                  class="modal-section__input modal-section__input-large modal-section__input_indent"
+                  placeholder="..."
+                />
+              </div>
+              <div class="model-section__btns-block">
+                <button class="model-section__btn-become" type="submit">
+                  Стать партнёром проекта
+                </button>
+                <button class="model-section__btn-cancel" id="btn-cancel">
+                  Отменить
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="js/script.js"></script>
+  </body>
+</html>
