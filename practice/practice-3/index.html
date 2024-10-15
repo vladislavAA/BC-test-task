@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Table</title>
+  </head>
+  <body>
+    <div class="container">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Поиск..."
+        class="input-search"
+      />
+      <span class="loader" id="loader">Загрузка...</span>
+      <span class="text-no-found" id="span-no-found">Ничего не найдено...</span>
+      <table id="postsTable" class="table-section">
+        <thead class="table-section__header">
+          <tr class="table-section__tr">
+            <th data-sort="id" class="table-section__th table-section__th_id">
+              ID
+            </th>
+            <th data-sort="title" class="table-section__th">Заголовок</th>
+            <th data-sort="body" class="table-section__th">Текст</th>
+          </tr>
+        </thead>
+        <tbody id="postsContainer" class="table-section__body"></tbody>
+      </table>
+    </div>
+    <script type="module" src="js/script.js"></script>
+  </body>
+</html>

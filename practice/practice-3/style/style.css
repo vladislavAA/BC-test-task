@@ -1,0 +1,97 @@
+@import url(./normalize.css);
+@import url(./reset.css);
+
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-search {
+  width: 300px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: antiquewhite;
+
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.loader {
+  position: fixed;
+  top: 50%;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 21px;
+}
+
+.text-no-found {
+  margin-top: 30px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.table-section {
+  margin-top: 30px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+}
+
+.table-section__header {
+  color: #393939;
+}
+
+.table-section__tr {
+}
+
+.table-section__th {
+  height: 40px;
+  background-color: #e7719f;
+  cursor: pointer;
+}
+
+.table-section__th:hover {
+  background-color: #f5b4cd;
+}
+
+.table-section__th:active {
+  background-color: #cf6c92;
+}
+
+.table-section__th_id {
+  width: 50px;
+}
+
+.table-section__body {
+}
+
+.table-section__td {
+  background-color: #a7e4f0;
+}
+
+.table-section__td_id {
+  text-align: center;
+}
+
+.table-section__td_title {
+  padding: 10px;
+  text-align: justify;
+}
+
+.table-section__td_body {
+  padding: 10px;
+  text-align: justify;
+}
